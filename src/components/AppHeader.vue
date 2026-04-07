@@ -12,8 +12,7 @@ import {
   <div class="header-description">
     <h1 class="header-title">Даниил Забурунов</h1>
     <p class="text-sm text-[#a1a1aa]">
-      Frontend-разработчик. Спокойные, надёжные интерфейсы для реальных
-      продуктов.
+      Frontend-разработчик. Надёжные интерфейсы для реальных продуктов.
     </p>
   </div>
   <div class="header-burger">
