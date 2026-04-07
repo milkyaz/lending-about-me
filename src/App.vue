@@ -4,6 +4,6 @@ import AppHeader from './components/AppHeader.vue'
 
 <template>
   <div class="bg-[#0a0a0a] px-5.5 py-8">
-    <AppHeader />
+    <header class="flex flex-row gap-13"><AppHeader /></header>
   </div>
 </template>
