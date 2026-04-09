@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
+import ProcessSection from '@/components/ProcessSection.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import About from '@/components/About.vue'
     <main class="flex flex-col gap-11">
       <Hero />
       <About />
+      <ProcessSection />
     </main>
   </div>
 </template>

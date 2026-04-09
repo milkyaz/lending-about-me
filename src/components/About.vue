@@ -5,7 +5,9 @@
     <p class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
       Для бизнеса
     </p>
-    <h2 class="text-[#fafafa] text-[28px] font-semibold">Что будет на сайте</h2>
+    <h2 class="text-[#fafafa] text-[28px] font-semibold leading-[106%]">
+      Что будет на сайте
+    </h2>
     <p class="text-[#a1a1aa] text-[14px] leading-[148%]">
       Клиент быстро понимает, чем вы занимаетесь и как с вами связаться.
     </p>
