@@ -1,16 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SectionHeader from '@/components/SectionHeader.vue'
+</script>
 
 <template>
   <div class="flex flex-col gap-4">
-    <p class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
-      Для бизнеса
-    </p>
-    <h2 class="text-[#fafafa] text-[28px] font-semibold leading-[106%]">
-      Что будет на сайте
-    </h2>
-    <p class="text-[#a1a1aa] text-[14px] leading-[148%]">
-      Клиент быстро понимает, чем вы занимаетесь и как с вами связаться.
-    </p>
+    <SectionHeader
+      title="Что будет на сайте"
+      eyebrow="Для бизнеса"
+      description="Клиент быстро понимает, чем вы занимаетесь и как с вами связаться."
+    />
     <div class="flex flex-col gap-4">
       <div class="about-card-item">
         <h4 class="about-card__title">Понятно</h4>

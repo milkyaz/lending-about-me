@@ -5,7 +5,9 @@ import { Button } from '@/components/ui/button'
 
 <template>
   <div class="flex flex-col gap-4">
-    <Badge class="hero-badge" variant="outline">Сайты для бизнеса </Badge>
+    <Badge class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
+      Лендинг под заявку
+    </Badge>
     <h2 class="text-[34px] font-semibold text-[#fafafa] leading-[94%]">
       Сайт, который помогает получать заявки.
     </h2>
