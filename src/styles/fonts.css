@@ -6,6 +6,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../assets/fonts/JetBrainsMono-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-sans: 'Geist', sans-serif;
+  --font-geist: 'Geist', sans-serif;
+  --font-jet: 'JetBrains Mono', monospace;
 }

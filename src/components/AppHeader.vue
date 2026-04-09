@@ -12,8 +12,7 @@ import {
   <div class="header-description">
     <h1 class="header-title">Даниил Забурунов</h1>
     <p class="text-sm text-[#a1a1aa]">
-      Frontend-разработчик. Спокойные, надёжные интерфейсы для реальных
-      продуктов.
+      Frontend-разработчик. Надёжные интерфейсы для реальных продуктов.
     </p>
   </div>
   <div class="header-burger">
@@ -48,7 +47,7 @@ import {
 @reference "@/main.css";
 
 .header-description {
-  @apply flex flex-col border-2 border-amber-800 gap-1.5;
+  @apply flex flex-col gap-1.5;
 }
 
 .header-title {
@@ -56,7 +55,7 @@ import {
 }
 
 .header-burger {
-  @apply flex flex-row items-start text-4xl text-[orange] border-2 border-purple-900;
+  @apply flex flex-row items-start text-4xl;
 }
 
 .header-burger__container {
