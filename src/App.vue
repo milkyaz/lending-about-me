@@ -9,7 +9,7 @@ import ContactSection from '@/components/ContactSection.vue'
 
 <template>
   <div class="bg-[#0a0a0a] px-5.5 py-8 flex flex-col gap-13">
-    <header class="flex flex-row gap-13"><AppHeader /></header>
+    <header class="flex flex-row justify-between"><AppHeader /></header>
     <main class="flex flex-col gap-11">
       <Hero />
       <About />
