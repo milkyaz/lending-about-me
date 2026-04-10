@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue'
 import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
 import ProcessSection from '@/components/ProcessSection.vue'
+import BusinessTasksSection from '@/components/BusinessTasksSection.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import ProcessSection from '@/components/ProcessSection.vue'
       <Hero />
       <About />
       <ProcessSection />
+      <BusinessTasksSection />
     </main>
   </div>
 </template>
