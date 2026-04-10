@@ -4,6 +4,7 @@ import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
 import ProcessSection from '@/components/ProcessSection.vue'
 import BusinessTasksSection from '@/components/BusinessTasksSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import BusinessTasksSection from '@/components/BusinessTasksSection.vue'
       <ProcessSection />
       <BusinessTasksSection />
     </main>
+    <footer><ContactSection /></footer>
   </div>
 </template>
