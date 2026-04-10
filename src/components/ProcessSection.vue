@@ -9,6 +9,7 @@ import {
   StepperTitle,
   StepperTrigger,
 } from '@/components/ui/stepper'
+import SectionHeader from '@/components/SectionHeader.vue'
 
 const steps = [
   {
@@ -38,15 +39,11 @@ const activeStep = 3
 
 <template>
   <div class="flex flex-col gap-4">
-    <p class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
-      Процесс
-    </p>
-    <h2 class="text-[#fafafa] text-[28px] font-semibold leading-[106%]">
-      Как делаю сайт
-    </h2>
-    <p class="text-[#a1a1aa] text-[14px] leading-[148%]">
-      Понять задачу, собрать, запустить.
-    </p>
+    <SectionHeader
+      title="Как делаю сайт"
+      eyebrow="Процесс"
+      description="Понять задачу, собрать, запустить."
+    />
     <Stepper
       :default-value="activeStep"
       orientation="vertical"
