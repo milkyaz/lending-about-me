@@ -1,27 +1,39 @@
 <script setup lang="ts">
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardFooter } from '@/components/ui/card'
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <Badge class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
-      Лендинг под заявку
-    </Badge>
-    <h2 class="text-[34px] font-semibold text-[#fafafa] leading-[94%]">
-      Сайт, который помогает получать заявки.
-    </h2>
-    <p class="text-[15px] text-[#a7b0be] leading-[148%]">
-      Понятно показываю ваши услуги и собираю сайт без лишней сложности.
-    </p>
-    <div class="flex flex-col gap-2.5">
-      <Button class="hero-button">Обсудить сотрудничество</Button>
-      <Button class="hero-button secondary">Смотреть кейсы</Button>
-    </div>
-    <p class="text-[#a1a1aa] [font-family:var(--font-jet)] text-xs">
-      Vue · TS · API
-    </p>
-  </div>
+  <Card
+    class="py-4 flex flex-row max-[1100px]:bg-transparent max-[1100px]:border-0 max-[1100px]:shadow-none max-[1100px]:rounded-none"
+  >
+    <CardContent class="flex flex-col gap-5">
+      <Badge class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
+        Лендинг под заявку
+      </Badge>
+      <h2 class="text-[58px] font-semibold text-[#fafafa] leading-[101%]">
+        Сайт, который помогает получать заявки.
+      </h2>
+      <p class="text-[15px] text-[#a7b0be] leading-[148%]">
+        Понятно показываю ваши услуги и собираю сайт без лишней сложности.
+      </p>
+      <div class="flex flex-row gap-2.5">
+        <Button class="hero-button">Обсудить сайт</Button>
+        <Button class="hero-button secondary">Смотреть кейсы</Button>
+      </div>
+      <p class="text-[#a1a1aa] [font-family:var(--font-jet)] text-xs">
+        Vue · TS · API
+      </p>
+    </CardContent>
+    <CardFooter class="flex flex-col justify-center items-center w-100">
+      <div
+        class="w-90 h-60 bg-cover bg-[url(/src/assets/images/desktopPanelsExport.png)]"
+      ></div>
+      <!--      <img class="bg-cover" src="" alt="hero-png" />-->
+      <hr class="border border-[#ffffff10] w-85" />
+    </CardFooter>
+  </Card>
 </template>
 
 <style scoped>
@@ -33,10 +45,8 @@ import { Button } from '@/components/ui/button'
 }
 
 .hero-button {
-  @apply w-full bg-[#18c7ae] text-[#05201a] font-bold text-[15px] py-6 px-4.5 rounded-2xl;
-}
-
-.secondary {
-  @apply bg-[#131a24] border-0 border-[#2f3a4c] font-semibold text-[#d7dee8];
+  @apply bg-[#131a24] border border-[#2f3a4c] py-7 px-11;
+  @apply hover:text-[#0a0a0a] hover:bg-[#14b8a6];
+  @apply font-semibold text-[#d7d9df] text-[15px] cursor-pointer;
 }
 </style>
