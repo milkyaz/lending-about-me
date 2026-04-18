@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeaderBurger from '@/components/HeaderBurger.vue'
 import { Card, CardContent } from '@/components/ui/card'
+import Button from './ui/button/Button.vue'
 </script>
 
 <template>
@@ -16,12 +17,24 @@ import { Card, CardContent } from '@/components/ui/card'
       </div>
       <div>
         <div class="header-navigation">
-          <a class="header-navigation__item">Обо мне</a>
-          <a class="header-navigation__item">Стек</a>
-          <a class="header-navigation__item">Проекты</a>
-          <a class="header-navigation__item">Контакты</a>
-          <a class="header-navigation__item text-white font-semibold">GitHub</a>
-          <a class="header-navigation__item text-white font-semibold">Резюме</a>
+          <Button class="link header-navigation__item"
+            ><a class="">Обо мне</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Стек</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Проекты</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Контакты</a></Button
+          >
+          <Button class="link header-navigation__item text-white font-semibold"
+            ><a class=" ">GitHub</a></Button
+          >
+          <Button class="link header-navigation__item text-white font-semibold"
+            ><a class=" ">Резюме</a></Button
+          >
         </div>
       </div>
       <HeaderBurger />
@@ -40,12 +53,11 @@ import { Card, CardContent } from '@/components/ui/card'
 }
 
 .header-navigation {
-  @apply flex max-lg:hidden flex-row min-[1100px]:gap-8 gap-3 cursor-pointer;
+  @apply flex max-lg:hidden flex-row min-[1100px]:gap-8 gap-3;
   @apply text-[#a1a1aa] min-[1200px]:text-[14px] text-[12px];
 }
 
 .header-navigation__item {
-  @apply hover:text-[#18c7ae] hover:shadow-sm shadow-[#18c7ae] rounded-sm p-2;
-  @apply transition delay-50 duration-300 ease-in-out;
+  @apply hover:text-[#18c7ae] cursor-pointer;
 }
 </style>
