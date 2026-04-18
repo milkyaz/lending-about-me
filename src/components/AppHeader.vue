@@ -8,7 +8,9 @@ import Button from './ui/button/Button.vue'
   <Card
     class="py-4 max-[1100px]:bg-transparent max-[1100px]:border-0 max-[1100px]:shadow-none max-[1100px]:rounded-none"
   >
-    <CardContent class="flex flex-row justify-between items-center">
+    <CardContent
+      class="flex flex-row justify-between items-center lg:gap-20 gap-5"
+    >
       <div class="header-description">
         <h1 class="header-title">Даниил Забурунов</h1>
         <p class="text-sm text-[#a1a1aa]">

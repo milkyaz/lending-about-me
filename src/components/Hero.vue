@@ -6,27 +6,30 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card'
 
 <template>
   <Card
-    class="py-4 flex flex-row max-[1100px]:bg-transparent max-[1100px]:border-0 max-[1100px]:shadow-none max-[1100px]:rounded-none"
+    class="py-4 flex flex-row flex-wrap justify-between max-[1100px]:bg-transparent max-[1100px]:border-0 max-[1100px]:shadow-none max-[1100px]:rounded-none"
   >
     <CardContent class="flex flex-col gap-5">
       <Badge class="text-[#14b8a6] text-[11px] [font-family:var(--font-jet)]">
         Лендинг под заявку
       </Badge>
       <h2 class="text-[58px] font-semibold text-[#fafafa] leading-[101%]">
-        Сайт, который помогает получать заявки.
+        Сайт, который помогает<br />
+        получать заявки.
       </h2>
       <p class="text-[15px] text-[#a7b0be] leading-[148%]">
         Понятно показываю ваши услуги и собираю сайт без лишней сложности.
       </p>
-      <div class="flex flex-row gap-2.5">
+      <div class="flex flex-row flex-wrap gap-2.5">
         <Button class="hero-button">Обсудить сайт</Button>
-        <Button class="hero-button secondary">Смотреть кейсы</Button>
+        <Button class="hero-button">Смотреть кейсы</Button>
       </div>
       <p class="text-[#a1a1aa] [font-family:var(--font-jet)] text-xs">
         Vue · TS · API
       </p>
     </CardContent>
-    <CardFooter class="flex flex-col justify-center items-center w-100">
+    <CardFooter
+      class="flex flex-col justify-center items-center w-100 max-sm:px-0 max-sm:w-80"
+    >
       <div
         class="w-90 h-60 bg-cover bg-[url(/src/assets/images/desktopPanelsExport.png)]"
       ></div>
