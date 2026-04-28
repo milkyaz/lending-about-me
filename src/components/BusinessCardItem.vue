@@ -31,6 +31,6 @@ const {} = defineProps<Props>()
 @reference "@/main.css";
 
 .task-item {
-  @apply border border-[#18c7ae] bg-[#131a24];
+  @apply p-4 border border-[#262626] rounded-[18px] bg-[#121212];
 }
 </style>

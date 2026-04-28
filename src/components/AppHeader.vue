@@ -5,11 +5,9 @@ import Button from './ui/button/Button.vue'
 </script>
 
 <template>
-  <Card
-    class="py-4 max-[1100px]:bg-transparent max-[1100px]:border-0 max-[1100px]:shadow-none max-[1100px]:rounded-none"
-  >
+  <Card class="py-4">
     <CardContent
-      class="flex flex-row justify-between items-center lg:gap-20 gap-5"
+      class="flex flex-row justify-between max-sm:items-start items-center lg:gap-20 gap-5"
     >
       <div class="header-description">
         <h1 class="header-title">Даниил Забурунов</h1>

@@ -8,7 +8,9 @@ import ContactSection from '@/components/ContactSection.vue'
 </script>
 
 <template>
-  <div class="bg-[#0a0a0a] px-5.5 py-8 flex flex-col gap-13">
+  <div
+    class="bg-[#0a0a0a] max-lg:px-5.5 px-10 py-8 flex flex-col gap-13 2xl:px-50"
+  >
     <header><AppHeader /></header>
     <main class="flex flex-col gap-11">
       <Hero />
