@@ -3,12 +3,14 @@ import SectionHeader from '@/components/SectionHeader.vue'
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
-    <SectionHeader
-      title="Что будет на сайте"
-      eyebrow="Для бизнеса"
-      description="Клиент быстро понимает, чем вы занимаетесь и как с вами связаться."
-    />
+  <div class="flex flex-col gap-4 lg:w-150">
+    <div>
+      <SectionHeader
+        title="Что будет на сайте"
+        eyebrow="Для бизнеса"
+        description="Клиент быстро понимает, чем вы занимаетесь и как с вами связаться."
+      />
+    </div>
     <div class="flex flex-col gap-4">
       <div class="about-card-item">
         <h4 class="about-card__title">Понятно</h4>

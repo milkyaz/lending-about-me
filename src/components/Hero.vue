@@ -37,7 +37,7 @@ import HeroFeatures from './HeroFeatures.vue'
           </p>
         </div>
         <div
-          class="max-2xl:w-full mt-5 grid sm:grid-cols-2 sm:gap-5 max-sm:grid-cols-1 max-sm:gap-5 max-sm:justify-items-center lg:grid-cols-4 lg:grid-rows-1 lg:gap-5 lg:justify-items-center"
+          class="max-2xl:w-full mt-5 grid sm:grid-cols-2 sm:gap-5 max-sm:grid-cols-1 max-sm:gap-5 justify-items-center lg:grid-cols-4 lg:grid-rows-1 lg:gap-5 lg:justify-items-center"
         >
           <HeroFeatures />
         </div>
