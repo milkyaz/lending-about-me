@@ -1,47 +1,45 @@
 <script setup lang="ts">
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from '@/components/ui/sheet'
+import HeaderBurger from '@/components/HeaderBurger.vue'
+import { Card, CardContent } from '@/components/ui/card'
+import Button from './ui/button/Button.vue'
 </script>
 
 <template>
-  <div class="header-description">
-    <h1 class="header-title">Даниил Забурунов</h1>
-    <p class="text-sm text-[#a1a1aa]">
-      Frontend-разработчик. Надёжные интерфейсы для реальных продуктов.
-    </p>
-  </div>
-  <div class="header-burger">
-    <div class="header-burger__container">
-      <Sheet>
-        <SheetTrigger
-          ><img
-            class="w-3.5"
-            src="/src/assets/images/menuIcon.webp"
-            alt="menu-icon"
-          />
-        </SheetTrigger>
-        <SheetContent class="border-l-2 border-[#101010] bg-black">
-          <SheetHeader>
-            <SheetDescription>
-              <div class="flex flex-col text-[#a1a1aa]">
-                <a>Обо мне</a>
-                <a>Стек</a>
-                <a>Проекты</a>
-                <a>Контакты</a>
-                <a class="text-white font-semibold">GitHub</a>
-                <a class="text-white font-semibold">Резюме</a>
-              </div>
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
-    </div>
-  </div>
+  <Card class="py-4">
+    <CardContent
+      class="flex flex-row justify-between max-sm:items-start items-center lg:gap-20 gap-5"
+    >
+      <div class="header-description">
+        <h1 class="header-title">Даниил Забурунов</h1>
+        <p class="text-sm text-[#a1a1aa]">
+          Frontend-разработчик. Надёжные интерфейсы для реальных продуктов.
+        </p>
+      </div>
+      <div>
+        <div class="header-navigation">
+          <Button class="link header-navigation__item"
+            ><a class="">Обо мне</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Стек</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Проекты</a></Button
+          >
+          <Button class="link header-navigation__item"
+            ><a class="">Контакты</a></Button
+          >
+          <Button class="link header-navigation__item text-white font-semibold"
+            ><a class=" ">GitHub</a></Button
+          >
+          <Button class="link header-navigation__item text-white font-semibold"
+            ><a class=" ">Резюме</a></Button
+          >
+        </div>
+      </div>
+      <HeaderBurger />
+    </CardContent>
+  </Card>
 </template>
 <style scoped>
 @reference "@/main.css";
@@ -54,11 +52,12 @@ import {
   @apply text-xl font-semibold text-white;
 }
 
-.header-burger {
-  @apply flex flex-row items-start text-4xl;
+.header-navigation {
+  @apply flex max-lg:hidden flex-row min-[1100px]:gap-8 gap-3;
+  @apply text-[#a1a1aa] min-[1200px]:text-[14px] text-[12px];
 }
 
-.header-burger__container {
-  @apply w-9 h-9 flex flex-row justify-center bg-[#111111] border border-[#262626] rounded-3xl;
+.header-navigation__item {
+  @apply hover:text-[#18c7ae] cursor-pointer;
 }
 </style>
